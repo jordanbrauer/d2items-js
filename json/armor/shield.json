@@ -1,0 +1,6 @@
+{
+  "damage": {
+    "smite": { "from": 0, "to": 0 }
+  },
+  "chance_to_block": 0,
+}

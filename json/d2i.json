@@ -1,0 +1,14 @@
+{
+  "since_patch": "string",
+  "name": "string",
+  "tier": "string",
+  "type": "string",
+  "rarity": "string",
+  "quality": "string",
+  "image": "string",
+  "item": ItemStatBlock,
+  "is_ladder_only": bool,
+  "drop_expiration": int,
+  "is_stackable": bool,
+  "is_socketable": bool,
+}

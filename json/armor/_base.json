@@ -1,0 +1,20 @@
+{
+  "level": 0,
+  "type": "string",
+  "durability": 0,
+  "defence": { "minimum": 0, "maximum": 0 },
+  "requirements": {
+    "level": 0,
+    "strength": 0,
+    "dexterity": 0,
+  },
+  "sockets": {
+    "maximum": 0,
+    "spawn": { "normal": 0, "nightmare": 0, "hell": 0 },
+  },
+  "properties": {
+    "1.0.0": [
+      "property"
+    ],
+  }
+}
