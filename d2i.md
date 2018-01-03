@@ -145,7 +145,7 @@ From lowest tier to highest tier: **Normal** items, **Exceptional** items, **Eli
 - Boots
 - Belts
 
-##### Armor Types
+##### Armor Weights
 
 - Light
 - Medium
@@ -165,9 +165,23 @@ From lowest tier to highest tier: **Normal** items, **Exceptional** items, **Eli
 - Spears
 - Staves
   - Orbs
+  - Wands
 - Swords
 - Throwing
-- Wands
+
+#### Miscellaneous
+
+- Jewellery
+- Gems
+- Runes
+- Jewels
+- Keys
+- Potions
+- Scrolls
+- Tomes
+- Ammo (arrows, bolts)
+- Pandemonium artifacts (Key of Terror/Hate/Destruction, Mephisto's Brain, Diablo's Horn, Baal's Eye).
+- Essence (4 flavours) and Token of Absolution (these are new items from Patch 1.13x)
 
 ### Item Rarities
 

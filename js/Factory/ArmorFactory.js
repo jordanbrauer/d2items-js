@@ -1,5 +1,5 @@
-import ItemEntity from '../Entity/ItemEntity.js';
-import HelmEntity from '../Entity/Armor/HelmEntity.js';
+import ItemModel from '../Model/ItemModel.js';
+import HelmModel from '../Model/Armor/HelmModel.js';
 
 export default class ArmorFactory {
   constructor () {
@@ -7,7 +7,7 @@ export default class ArmorFactory {
   }
 
   generateItem (item, parameters) {
-    return new ItemEntity({
+    return new ItemModel({
       since_patch: parameters.since_patch,
       name: parameters.name,
       tier: parameters.tier,
@@ -25,8 +25,8 @@ export default class ArmorFactory {
 
   createHelm (parameters) {
     parameters.type = 'helm';
-    
-    const helm = new HelmEntity({
+
+    const helm = new HelmModel({
       level: parameters.level || 1,
       base: parameters.base || 'cap',
       defence: parameters.defence || { minimum: 1, maximum: 2 },

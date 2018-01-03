@@ -6,51 +6,68 @@
   </head>
   <body>
     <script type="module">
-      import { ArmorFactory, Cap } from './d2items.js';
+      import BaseItem from './src/BaseItem.js';
 
-      const armorFactory = new ArmorFactory();
-
-      const cap = new Cap({});
-      console.log(cap);
-
-      const harlequinCrestShako = armorFactory.createHelm({
-        level: 69,
-        name: 'harlequin crest',
-        tier: 'elite',
+      const baseStatblock = {};
+      const base = new BaseItem({
+        base: null,
+        is_ladder_only: false,
+        is_stackable: false,
+        item: baseStatblock,
+        quality: 'normal',
         rarity: 'unique',
-        base: 'shako',
-        requirements: {
-          level: 62,
-        },
-        properties: {
-          '1.10': [
-            '+2 to all skills',
-            '+1 to life (based on character level)',
-            '+1 to mana (based on character level)',
-            'damage reduced by 10%',
-            '50% better chance of getting magic items',
-            '+2 to all attributes'
-          ],
-          '1.09': [
-            '+2 to all skills',
-            '+2 to strength',
-            '+2 to dexterity',
-            '+2 to vitality',
-            '+2 to energy',
-            '+1 to life (based on character level)',
-            '+1 to mana (based on character level)',
-            'damage reduced by 10%',
-            '50% better chance of getting magic items',
-          ],
-          '1.08': [
-            'indestructible',
-            '+2 to all skills',
-            '+100% enhanced defense',
-            'increase maximum life 40%',
-            '50% better chance of getting magical items',
-          ]
-        }
+        since_patch: '1.0.8',
+        tier: 'elite',
+        type: 'armor',
+        subtypes: [ 'helm' ],
       });
+      console.log(base);
+
+      // import { ArmorFactory, Cap } from './js/d2items.js';
+      //
+      // const armorFactory = new ArmorFactory();
+      //
+      // const cap = new Cap({});
+      // console.log(cap);
+      //
+      // const harlequinCrestShako = armorFactory.createHelm({
+      //   level: 69,
+      //   name: 'harlequin crest',
+      //   tier: 'elite',
+      //   rarity: 'unique',
+      //   base: 'shako',
+      //   requirements: {
+      //     level: 62,
+      //   },
+      //   properties: {
+      //     '1.10': [
+      //       '+2 to all skills',
+      //       '+1 to life (based on character level)',
+      //       '+1 to mana (based on character level)',
+      //       'damage reduced by 10%',
+      //       '50% better chance of getting magic items',
+      //       '+2 to all attributes'
+      //     ],
+      //     '1.09': [
+      //       '+2 to all skills',
+      //       '+2 to strength',
+      //       '+2 to dexterity',
+      //       '+2 to vitality',
+      //       '+2 to energy',
+      //       '+1 to life (based on character level)',
+      //       '+1 to mana (based on character level)',
+      //       'damage reduced by 10%',
+      //       '50% better chance of getting magic items',
+      //     ],
+      //     '1.08': [
+      //       'indestructible',
+      //       '+2 to all skills',
+      //       '+100% enhanced defense',
+      //       'increase maximum life 40%',
+      //       '50% better chance of getting magical items',
+      //     ]
+      //   }
+      // });
 
       // const harlequinCrestShako = new Item({
       //   since_patch: '1.0.8',
@@ -110,7 +127,7 @@
       // });
 
       // console.log(harlequinCrestShako.item.properties['1.10']);
-      console.log(harlequinCrestShako);
+      // console.log(harlequinCrestShako);
       // console.log(JSON.stringify(harlequinCrestShako));
     </script>
   </body>

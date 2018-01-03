@@ -1,4 +1,4 @@
-import HelmModel from '../../HelmModel.js';
+import HelmModel from '../../../../Model/Armor/HelmModel.js';
 
 export default class CapEntity extends HelmModel {
   constructor (settings) {
